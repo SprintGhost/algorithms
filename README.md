@@ -7,6 +7,6 @@ Contents
 ----
 
 ### Chapter1 Fundamentals
-&emsp;[1.1 Programming Model](https://github.com/jimmysuncpt/Algorithms/tree/master/src/com/jimmysun/algorithms/chapter1_1)<br />
+&emsp;[1.1 Programming Model](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_1)</br>
 
 This repositorie will update untill I finsh read this book.

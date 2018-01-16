@@ -3,6 +3,7 @@ package chapter1_1;
  * Write a program, get three int parameters from command line
  * if they are equal then print
  * else print not equal
+ *
  */
 import edu.princeton.cs.algs4.StdOut;
 

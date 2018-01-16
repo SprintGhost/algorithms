@@ -14,11 +14,9 @@ public class Ex03 {
             for (int i = 0; i <args.length; i++) {
                 par[i]  = Integer.parseInt(args[i]);
             }
-            if (par[0] == par[1]) {
-                if(par[0] == par[2]){
+            if (par[0] == par[1] && par[0] == par[2] ) {
                     StdOut.println("equal");
                     System.exit(0);
-                }
             }
             StdOut.println("not equal");
             System.exit(1);

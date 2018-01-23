@@ -1,5 +1,9 @@
 package chapter1_1;
-
+/*
+ * Write a program, if double types x and y, if 0 < x < 1
+ * and 0 < y < 1, then print true, else print false
+ *
+ */
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 

@@ -8,5 +8,5 @@ Contents
 
 ### Chapter1 Fundamentals
 &emsp;[1.1 Programming Model](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_1)</br>
-
+&emsp;[1.2 Data Abstraction](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_2)</br>
 This repositorie will update untill I finsh read this book.

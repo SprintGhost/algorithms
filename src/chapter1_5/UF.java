@@ -25,24 +25,39 @@ public class UF {
         return find(p) == find(q);
     }
 
-    public int find(int p)
+//    public int find(int p)
+//    {
+//        return id[p];
+//    }
+//
+//    /*
+//    * quick find
+//    *
+//    */
+//    public void union(int p, int q)
+//    {
+//        int pID = find(p);
+//        int qID = find(q);
+//        if (pID == qID) return;
+//        for (int i = 0; i < id.length; i++)
+//        {
+//            if(id[i] == pID) id[i] = qID;
+//        }
+//        count--;
+//    }
+
+    private int find(int p)
     {
-        return id[p];
+        while(p != id[p]) p = id[p];
+        return p;
     }
 
-    /*
-    * quick find
-    *
-    */
     public void union(int p, int q)
     {
-        int pID = find(p);
-        int qID = find(q);
-        if (pID == qID) return;
-        for (int i = 0; i < id.length; i++)
-        {
-            if(id[i] == pID) id[i] = qID;
-        }
+        int pRoot = find(p);
+        int qRoot = find(q);
+        if (pRoot == qRoot) return;
+        id[qRoot] = pRoot;
         count--;
     }
 

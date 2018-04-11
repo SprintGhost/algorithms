@@ -1,5 +1,10 @@
 package chapter1_5;
 
+/*
+* This class contain quick-find & quick-union
+*
+*/
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -25,15 +30,16 @@ public class UF {
         return find(p) == find(q);
     }
 
+    /*
+     * quick find
+     *
+     */
 //    public int find(int p)
 //    {
 //        return id[p];
 //    }
 //
-//    /*
-//    * quick find
-//    *
-//    */
+
 //    public void union(int p, int q)
 //    {
 //        int pID = find(p);
@@ -46,6 +52,10 @@ public class UF {
 //        count--;
 //    }
 
+    /*
+    * quick-union
+    *
+    */
     private int find(int p)
     {
         while(p != id[p]) p = id[p];

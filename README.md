@@ -19,6 +19,7 @@ Terminal Command
 In Win10 PowerShell we can input cmd to read files with args.</br> 
 Exp -> cat tinyUF.txt | java -classpath "D:\code\java\algs4.jar" chapter1_5.UF</br>
 In PowerShell we can't ues "<" (Like that:  java -classpath "D:\code\java\algs4.jar" chapter1_5.UF < tinyUF.txt)"</br>
+Unless in the PowerShell you can input "cmd" then input "java -classpath "D:\code\java\algs4.jar" chapter1_5.UF < tinyUF.txt"</br>
 You can get reference from [Stackoverflow](https://stackoverflow.com/questions/39503642/powershell-the-operator-is-reserved-for-future-use-in-java?noredirect=1#comment66324711_39503642)</br> 
 
 ###PS

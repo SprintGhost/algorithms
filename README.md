@@ -12,4 +12,7 @@ Contents
 &emsp;[1.4 Analysis of Algorithms](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_4)</br>
 &emsp;[1.5 Case Study: Union-Find](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_5)</br>
 This repositorie will update untill I finsh read this book.</br>
-Terminal Command: Exp -> java -classpath "D:\code\java\algorithms\out\production\algorithms;D:\code\java\stdlib-package.jar;D:\code\java\algs4.jar" chapter1_5.UF
+
+####Terminal Command
+In Win10 PowerShell we can input cmd to read files with args.</br> 
+Exp -> cat tinyUF.txt | java -classpath "D:\code\java\algs4.jar" chapter1_5.UF

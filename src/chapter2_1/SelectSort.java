@@ -78,9 +78,7 @@ public class SelectSort {
         StdDraw.setXscale(0, 10);
         StdDraw.setYscale(0, 5);
         StdDraw.setPenRadius(.005);
-//        StdDraw.setPenColor(StdDraw.DARK_GRAY);
         String[] a = StdIn.readAllStrings();
-//        StdDraw.filledRectangle(0.0,0, Double.parseDouble(a[0]), 2);
         SelectSort.Select_Sort(a);
         assert isSorted(a);
         show(a);

@@ -37,11 +37,26 @@ public class Example {
         return v.compareTo(w) < 0;
     }
 
+    /*
+    *
+    * The reason that the following exch function is overloaded is
+    * because I don't know how to cast comparable and string,
+    * and if anyone knows please let me know, thank you.
+    *
+    * */
     public static void exch(Comparable[] a, int i, int j)
     {
         Comparable t = a[i];
         a[i] = a[j];
         a[j] = t;
+    }
+    public static void exch(String[] a, int i, int j)
+    {
+        draw(a,i,j);
+        String t = a[i];
+        a[i] = a[j];
+        a[j] = t;
+        draw(a,i,j);
     }
 
     public static void show(Comparable[] a)
@@ -62,7 +77,32 @@ public class Example {
     {
         StdDraw.setPenColor(StdDraw.DARK_GRAY);
         for (int i = 0; i < a.length; i++)
-            StdDraw.rectangle( 2 * i + 0.5,0, 0.5, Double.parseDouble(a[i]));
+        {
+            StdDraw.text(i/10.0 + 0.25, 1.0, a[i]);
+        }
+    }
+
+    public static void draw(String[] a, int i, int j)
+    {
+        StdDraw.setPenColor(StdDraw.DARK_GRAY);
+        StdDraw.clear();
+        draw(a);
+        for (int k = 0; k < a.length; k++)
+        {
+            if((k != i) || (k != j))
+            {
+                StdDraw.text(k / 10.0 + 0.25, 3.0, a[k]);
+            }
+            StdDraw.setPenColor(StdDraw.RED);
+            StdDraw.text(i/10.0 + 0.25, 3, a[i]);
+            StdDraw.text(j/10.0 + 0.25, 3, a[j]);
+            StdDraw.setPenColor(StdDraw.DARK_GRAY);
+        }
+
+        try{
+            Thread.currentThread().sleep(1000);
+        }
+        catch (InterruptedException e){}
     }
 
     public static void main(String[] args)

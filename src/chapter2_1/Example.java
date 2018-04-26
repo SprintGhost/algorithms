@@ -27,6 +27,12 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 public class Example {
+
+    public enum SortTypes{
+        Selection,
+        Insertion,
+        Shell,
+    }
     public static void sort(Comparable[] a)
     {
 
@@ -100,7 +106,7 @@ public class Example {
         }
 
         try{
-            Thread.currentThread().sleep(1000);
+            Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
         }
         catch (InterruptedException e){}
     }

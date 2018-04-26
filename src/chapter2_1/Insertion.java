@@ -36,6 +36,17 @@ public class Insertion {
         }
     }
 
+    public static void sort(Comparable[] a, String[] b)
+    {
+        for(int i = 0; i < a.length; i++)
+        {
+            for(int j = i; j > 0 && Example.less(a[j], a[j - 1]); j--)
+            {
+                Example.exch(a, j ,j - 1);
+                Example.exch(b, j ,j - 1);
+            }
+        }
+    }
        public static void main(String[] args)
     {
         String[] a = StdIn.readAllStrings();

@@ -35,9 +35,9 @@ public class SelectSort {
             for(int j = i + 1; j < a.length; j++)
             {
                 if(Example.less(a[j], a[min])) min = j;
-                Example.exch(a, i, min);
-                Example.exch(b,i,min);
             }
+            Example.exch(a, i, min);
+            Example.exch(b,i,min);
         }
     }
 

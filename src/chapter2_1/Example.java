@@ -32,6 +32,7 @@ public class Example {
         Selection,
         Insertion,
         Shell,
+        MaxTypes,
     }
     public static void sort(Comparable[] a)
     {
@@ -56,6 +57,7 @@ public class Example {
         a[i] = a[j];
         a[j] = t;
     }
+
     public static void exch(String[] a, int i, int j)
     {
         draw(a,i,j);
@@ -64,6 +66,7 @@ public class Example {
         a[j] = t;
         draw(a,i,j);
     }
+
 
     public static void show(Comparable[] a)
     {
@@ -88,6 +91,50 @@ public class Example {
         }
     }
 
+    public static void draw(String[] a, int border)
+    {
+        StdDraw.clear();
+        draw(a);
+        for (int i = 0; i < a.length; i++)
+        {
+            if (i > border)
+            {
+                StdDraw.setPenColor(StdDraw.DARK_GRAY);
+            }
+            else
+            {
+                StdDraw.setPenColor(StdDraw.RED);
+            }
+            StdDraw.text(i/10.0 + 0.25, 3.0, a[i]);
+        }
+        try{
+            Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
+        }
+        catch (InterruptedException e){}
+    }
+
+    public static void DrawMerge(String[] a, int lo, int hi)
+    {
+        StdDraw.clear();
+        draw(a);
+        for (int i = 0; i < a.length; i++)
+        {
+            if ((i >= lo ) && (i <= hi))
+            {
+                StdDraw.setPenColor(StdDraw.RED);
+            }
+            else
+            {
+                StdDraw.setPenColor(StdDraw.DARK_GRAY);
+            }
+            StdDraw.text(i/10.0 + 0.25, 3.0, a[i]);
+        }
+        try{
+            Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
+        }
+        catch (InterruptedException e){}
+    }
+
     public static void draw(String[] a, int i, int j)
     {
         StdDraw.setPenColor(StdDraw.DARK_GRAY);
@@ -109,6 +156,13 @@ public class Example {
             Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
         }
         catch (InterruptedException e){}
+    }
+
+    public static void InitDraw(String[] a)
+    {
+        StdDraw.setXscale(0, a.length/10.0 + 0.5);
+        StdDraw.setYscale(0, 5);
+        StdDraw.setPenRadius(.05);
     }
 
     public static void main(String[] args)

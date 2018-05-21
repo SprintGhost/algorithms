@@ -32,21 +32,19 @@ package chapter2_1;
  * */
 
 import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdIn;
-
-import java.util.Arrays;
+import edu.princeton.cs.algs4.StdOut;
 
 public class Ex04 {
 
     public static void main(String[] args)
     {
         String[] a = {"E", "A", "S", "Y", "Q", "U", "E", "S", "T", "I", "O", "N"};
-        String[] b = Arrays.copyOf(a,a.length);
         StdDraw.setXscale(0, a.length/10.0 + 0.5);
         StdDraw.setYscale(0, 5);
         StdDraw.setPenRadius(.05);
         Example.draw(a);
-        Insertion.sort(a, b);
+        StdOut.println("Begin draw the sort process");
+        Insertion.DrawSort(a);
         assert Example.isSorted(a);
         Example.show(a);
     }

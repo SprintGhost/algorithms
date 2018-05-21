@@ -31,21 +31,15 @@ package chapter2_1;
 * */
 
 import edu.princeton.cs.algs4.StdDraw;
-import edu.princeton.cs.algs4.StdIn;
-
-import java.util.Arrays;
 
 public class Ex01 {
 
     public static void main(String[] args)
     {
         String[] a = {"E", "A", "S", "Y", "Q", "U", "E", "S", "T", "I", "O", "N"};
-        String[] b = Arrays.copyOf(a,a.length);
-        StdDraw.setXscale(0, a.length/10.0 + 0.5);
-        StdDraw.setYscale(0, 5);
-        StdDraw.setPenRadius(.05);
+        Example.InitDraw(a);
         Example.draw(a);
-        SelectSort.Sort(a,b);
+        SelectSort.DrawSort(a);
         assert Example.isSorted(a);
         Example.show(a);
     }

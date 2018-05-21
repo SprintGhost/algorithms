@@ -35,10 +35,10 @@ public class SortCompare {
                 SelectSort.Sort(a);
                 break;
             case Insertion:
-                Insertion.sort(a);
+                Insertion.Sort(a);
                 break;
             case Shell:
-                Shell.sort(a);
+                Shell.Sort(a);
                 break;
         }
     }
@@ -46,11 +46,11 @@ public class SortCompare {
     {
         Stopwatch timer = new Stopwatch();
         if (alg.equals("Insertion"))
-            Insertion.sort(a);
+            Insertion.Sort(a);
         else if(alg.equals("Selection"))
             SelectSort.Sort(a);
         else if(alg.equals("Shell"))
-            Shell.sort(a);
+            Shell.Sort(a);
         return timer.elapsedTime();
     }
 

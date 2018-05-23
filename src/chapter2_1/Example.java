@@ -93,19 +93,13 @@ public class Example {
 
     public static void draw(String[] a, int border)
     {
-        StdDraw.clear();
-        draw(a);
-        for (int i = 0; i < a.length; i++)
+        for (int i = 0; i <= border; i++)
         {
-            if (i > border)
-            {
-                StdDraw.setPenColor(StdDraw.DARK_GRAY);
-            }
-            else
-            {
+            if (i == border)
                 StdDraw.setPenColor(StdDraw.RED);
-            }
-            StdDraw.text(i/10.0 + 0.25, 3.0, a[i]);
+            else
+                StdDraw.setPenColor(StdDraw.DARK_GRAY);
+            StdDraw.text(i/10.0 + 0.25, 2.0, a[i]);
         }
         try{
             Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
@@ -153,7 +147,7 @@ public class Example {
         }
 
         try{
-            Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
+            Thread.currentThread().sleep(1000);// 0.5s, I think 0.5s is better than 1s.
         }
         catch (InterruptedException e){}
     }

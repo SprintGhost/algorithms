@@ -25,7 +25,7 @@ package chapter2_2;
  *
  *  A E Q S U Y E I N O S T
  *
- * Ex02 & Ex02 can ref from Merge.java and MergeBU.java
+ * Ex02 & Ex03 can ref from Merge.java and MergeBU.java
  *
  *
  * */

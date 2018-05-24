@@ -147,7 +147,7 @@ public class Example {
         }
 
         try{
-            Thread.currentThread().sleep(1000);// 0.5s, I think 0.5s is better than 1s.
+            Thread.currentThread().sleep(500);// 0.5s, I think 0.5s is better than 1s.
         }
         catch (InterruptedException e){}
     }

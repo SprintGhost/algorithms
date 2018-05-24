@@ -13,6 +13,8 @@ Contents
 &emsp;[1.5 Case Study: Union-Find](https://github.com/SprintGhost/algorithms/tree/master/src/chapter1_5)</br>
 ### Chapter2 Sorting
 &emsp;[2.1 Elementary Sorts](https://github.com/SprintGhost/algorithms/tree/master/src/chapter2_1)</br>
+&emsp;[2.2 Merge Sorts](https://github.com/SprintGhost/algorithms/tree/master/src/chapter2_2)</br>
+&emsp;[2.3 Quick Sorts](https://github.com/SprintGhost/algorithms/tree/master/src/chapter2_3)</br>
 
 Terminal Command
 ----
